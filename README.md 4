@@ -1,0 +1,19 @@
+# p5-maors
+my  dots love to dance
+var Mover = function(){
+  this.x= 400/3;
+  this.y = 400/3;
+  
+};
+
+Mover.prototype.update = function(){
+    this.x+=random(-4,4);
+    this.y +=random(-5,5);
+};
+
+Mover.prototype.show = function(){
+   
+    fill(random(25)%100,random(25)%100,random(112)%100);
+    noStroke();
+    rect(this.x, this.y,50,60);
+};
